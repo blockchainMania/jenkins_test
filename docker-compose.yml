@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build: . # 현재 폴더에 있는 그 깔끔한 Dockerfile을 사용해라!
+    container_name: my-fastapi-app
+    ports:
+      - "8001:8000" # [중요] 호스트의 8001번을 컨테이너의 8000번(Dockerfile 설정)으로 연결!
+    restart: always
