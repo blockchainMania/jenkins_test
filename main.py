@@ -13,9 +13,9 @@ def read_root():
     }
 
 @app.get("/test")
-def read_root():
+def read_test():
     return {
         "status": "Running",
         "server_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "owner": "DH KIM"
+        "owner": "DH Kim"
     }
