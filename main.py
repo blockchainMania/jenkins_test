@@ -12,7 +12,7 @@ def read_root():
         "owner": "YS Kim"
     }
 
-@app.get("/test")
+@app.get("/test2")
 def read_test():
     return {
         "status": "Running",
