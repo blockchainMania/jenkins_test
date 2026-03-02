@@ -11,3 +11,11 @@ def read_root():
         "server_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "owner": "YS Kim"
     }
+
+@app.get("/test")
+def read_root():
+    return {
+        "status": "Running",
+        "server_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "owner": "DH KIM"
+    }
